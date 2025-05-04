@@ -19,7 +19,7 @@ function maximumLengthSubstring(s: string): number {
       l++;
     }
 
-    maxLength = Math.max(maxLength, r - 1 + 1);
+    maxLength = Math.max(maxLength, r - l + 1);
   }
 
   return maxLength;
